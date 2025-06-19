@@ -1,0 +1,245 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e1e1e;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9933;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9933;
+}
+
+/* Hero Section */
+.hero {
+  background: #121212;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-content h2 {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #bbb;
+}
+
+.btn {
+  background-color: #ff9933;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e68a00;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  background-color: #1a1a1a;
+  flex-direction: row-reverse;
+}
+
+.about-img img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.skills ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding-left: 0;
+}
+
+.skills li {
+  margin-bottom: 0.5rem;
+  color: #f0f0f0;
+}
+
+/* Services Section */
+.services {
+  background-color: #121212;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
+  gap: 1.5rem;
+}
+
+.service-item {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #ff9933;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  background-color: #ff9933;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#scrollTopBtn:hover {
+  background-color: #e68a00;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: #f5f5f5;
+  color: #121212;
+}
+
+.light-mode .navbar,
+.light-mode .service-item,
+.light-mode .about {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.light-mode .nav-links a {
+  color: #333;
+}
+
+.light-mode .nav-links a:hover {
+  color: #ff9933;
+}
+
+.light-mode .btn,
+.light-mode #scrollTopBtn {
+  background-color: #ff9933;
+  color: white;
+}
+
+.light-mode .btn:hover,
+.light-mode #scrollTopBtn:hover {
+  background-color: #e68a00;
+}
+
+/* Responsive layout adjustments for all devices */
+@media (max-width: 768px) {
+  /* Navbar: Stack links vertically */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Hero: Resize text for smaller screens */
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* About section: Stack vertically on small screens */
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-img img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Services: Stack service cards in one column */
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
