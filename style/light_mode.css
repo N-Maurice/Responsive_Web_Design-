@@ -1,36 +1,86 @@
+/* ================= LIGHT MODE THEME ================= */
 body.light-mode {
-  background-color: var(--light-bg);
-  color: var(--light-text);
+  background-color: #fff8f0;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-body.light-mode .navbar,
-body.light-mode .services,
-body.light-mode .about,
-body.light-mode .social-footer,
-body.light-mode main,
-body.light-mode section {
-  background-color: var(--light-bg);
-  color: var(--light-text);
+body.light-mode .navbar {
+  background-color: #fff4b3; /* Light yellow header */
+  color: #2b2b2b;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 0;
+}
+
+body.light-mode .logo {
+  color: #e6a500;
 }
 
 body.light-mode .nav-links a {
-  color: var(--light-text);
+  color: #555;
+  font-weight: 500;
 }
 
 body.light-mode .nav-links a:hover {
-  color: var(--light-accent);
+  color: #e6a500;
 }
 
-body.light-mode .logo,
+body.light-mode .hero,
+body.light-mode .about,
+body.light-mode .education-table,
+body.light-mode .contact-summary,
+body.light-mode .project-card,
+body.light-mode .services,
+body.light-mode .service-item {
+  background: linear-gradient(135deg, #ffffff, #fff5cc, #ffe3ec);
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 body.light-mode .btn,
-body.light-mode .service-item,
-body.light-mode .skill-item,
-body.light-mode #scrollTopBtn {
-  background-color: var(--light-accent);
-  color: white;
+body.light-mode #submit-button,
+body.light-mode #themeToggle {
+  background-color: #ffcc00;
+  color: #121212;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
 }
 
 body.light-mode .btn:hover,
-body.light-mode #scrollTopBtn:hover {
-  background-color: #cc7a00;
+body.light-mode #submit-button:hover,
+body.light-mode #themeToggle:hover {
+  background-color: #e6a500;
+  color: #fff;
+}
+
+body.light-mode .section-title,
+body.light-mode #contact-me,
+body.light-mode #edu-title,
+body.light-mode #project-title {
+  color: #e6a500;
+}
+
+body.light-mode .skill-item {
+  background-color: #fff1c1;
+  color: #222;
+  border: 2px solid #ffd966;
+}
+
+body.light-mode .about-img img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+body.light-mode .footer-flex {
+  background-color: #2b2b2b; /* Dark footer */
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0;
 }
