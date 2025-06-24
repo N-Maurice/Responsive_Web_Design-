@@ -1,78 +1,207 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Maurice</title>
-  <link rel="stylesheet" href="style/style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maurice | Resume</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/light_mode.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
-  <header class="hero">
+  <!-- Navbar -->
     <nav class="navbar">
-      <div class="logo">Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <div class="logo">Maurice.dev</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggle"><i class="fas fa-sun"></i></button></li>
+        </ul>
     </nav>
-    <div class="hero-content">
-      <h2>Hello, My Name Is</h2>
-      <h1>Maurice NSHIMYUMUKIZA</h1>
-      <p>A Creative Freelancer & Full Stack Developer</p>
-      <button class="btn">Know More</button>
-    </div>
-  </header>
+  
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Maurice</h1>
+            <p>Sofware Engineer | Youth Leader | Social Impact Advocate</p>
+            <button class="btn-1">Know More</button>
+        </div>
+    </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-img">
-        <img src="Images/4563215321.jpg" alt="Maurice NSHIMYUMUKIZA">
+  <!-- About -->
+    <section id="about" class="about">
+        <div class="about-container">
+        <div class="about-img">
+        <img src="Images/IMG_1203.JPG" alt="Maurice Portrait" />
       </div>
       <div class="about-text">
-        <h2>Who Am I</h2>
-        <p>I am Maurice NSHIMYUMUKIZA, a passionate full stack developer and creative thinker with a focus on delivering impactful solutions across web and mobile platforms. I enjoy solving real-world problems using clean and scalable code.</p>
-        <div class="skills">
-          <ul>
-            <li>HTML5 ⭐⭐⭐⭐⭐</li>
-            <li>CSS3 ⭐⭐⭐⭐☆</li>
-            <li>JavaScript ⭐⭐⭐⭐☆</li>
-            <li>PHP ⭐⭐⭐☆</li>
-            <li>MySQL ⭐⭐⭐☆</li>
-            <li>Laravel ⭐⭐⭐☆</li>
-          </ul>
-        </div>
-        <button class="btn" onclick="downloadResume()">Download CV</button>
-        <!--
-            <button id="themeToggle" class="btn" onclick="toogleTheme">
-            Light Mode
-            </button>
-        -->
-                  
-        </div>
+        <h2>About Me</h2><br><br>
+        <p>I’m Maurice NSHIMYUMUKIZA — a purpose-driven software engineer passionate about merging tech with impact. I'm deeply invested in using innovation to transform education, empower youth, and solve complex social issues across Africa.</p>
+        <p>I've led and contributed to projects that aim to educate, uplift, and connect communities. I value growth, teamwork, and courage in pursuing solutions that matter.</p>
+        <p>I'm committed to ethical leadership, continuous learning, and bringing visionary ideas to life through collaborative tech.</p><br><br>
+        <h4 class="quote"><em>"Do Hard Things!"</em></h4><br><br>
+        <button class="btn-2" onclick="downloadResume()">Download Resume</button>
+      </div>
     </div>
   </section>
 
+  <!-- Skills -->
+  <section id="skills" class="services">
+    <h2 class="section-title">Core Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS3</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">React.js</div>
+      <div class="skill-item">Node.js</div>
+      <div class="skill-item">MongoDB</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">Git & GitHub</div>
+      <div class="skill-item">Inventory Tools</div>
+      <div class="skill-item">MS Office</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <h2 class="experience-wrapper">Professional Experience</h2><br>
+    <div class="experience-wrapper">
+      <div class="experience-block">
+        <h3>Software Development Intern <span>— Tiger Soft Ltd</span></h3>
+        <p><em>July – August 2023</em></p><br>
+        <p>
+            Developed and tested web applications in collaboration with senior developers.
+        </p><br>
+        <p>Contributed to Git-managed repositories and participated in Agile sprints.
+
+        </p><br>
+        <p>
+            Learned deployment and hosting processes through hands-on project delivery.
+        </p><br>
+      </div>
+
+      <div class="experience-block">
+        <h3>Sales Associate <span>— Imena Trades</span></h3>
+        <p><em>October 2023 – January 2024</em></p><br>
+        <p>
+            Provided customer service and handled POS inventory system updates.
+        </p><br>
+        <p>
+            Assisted in tracking sales and maintaining product display standards.
+        </p><br>
+      </div>
+
+      <div class="experience-block">
+        <h3>Teacher Assistant <span>— First Impressions Intl. School</span></h3>
+        <p><em>January – September 2024</em></p><br>
+        <p>
+            Assisted in lesson delivery and one-on-one student support.
+        </p><br>
+        <p>
+            Helped organize activities and foster a fun learning environment.
+        </p><br>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="services">
+    <h2 id="edu-title">Education</h2>
+    <div class="education-table">
+      <div class="education-row">
+        <div>
+            <h3>African Leadership University</h3>
+        </div>
+        <div>
+            <h5>BSc Software Engineering</h5>
+        </div>
+        <div>2024 – Present</div>
+      </div>
+      <div class="education-row">
+        <div>
+            <h3>Saint Ignatius High School</h3>
+        </div>
+        <div>
+            <h5>High School Diploma</h5>
+        </div>
+        <div>2020 – 2023</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="about">
+    <h2 id="project-title">Projects & Initiatives</h2><br>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Web Development Summative</h3>
+        <p>Created a personal portfolio that reflects a modern, responsive design and effective use of JavaScript components and layout techniques.</p>
+      </div>
+      <div class="project-card">
+        <h3>Read to Lead</h3>
+        <p>Designed and managed a youth initiative that uses tech to promote reading, literacy, and creative learning for African children.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 id="contact-me"> Contact Me! </h2>
+    <div class="container-contact">
+        <div class="form-contact">
+            <form id="contactForm" onsubmit="return sendEmail(this);"> 
+                <div id="nameField">
+                  <label for="name">Names:</label>
+                  <input type="text" id="name" name="name" required placeholder="Type Your Full Names" /> <br /><br />
+                </div>
+              
+                <div id="emailField">
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required placeholder="eg.admin@gmail.com" /> <br /><br />
+                </div>
+              
+                <div id="phoneField">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="Type your number here" /> <br /><br />
+                </div>
+              
+                <div id="subjectField">
+                  <label for="subject">Email Subject:</label>
+                  <input type="text" id="subject" name="subject" required placeholder="Please type here!" /> <br /><br />
+                </div>
+              
+                <div id="messageField">
+                  <label for="message">Message:</label><br /><br />
+                  <textarea id="message" name="message" rows= "4" cols="50" required placeholder="Please enter your message below"></textarea><br /><br />
+                </div>
+              
+                <div id="submitField">
+                  <button type="submit" id="submit-button">Send Message</button>
+                </div>
+              </form>              
+            </div>  
+        </div>
+    </section>
   
-  <section class="services" id="services">
-    <h2 class="section-title">What Can I Do</h2>
-    <div class="service-grid">
-      <div class="service-item"> <a href="mailto:m.nshimyumu@alustudent.com" target="_blank"><i class="fas fa-envelope"></i></a></div>
-      <div class="service-item"> <a href="https://www.linkedin.com/in/nshimyumukiza-maurice-470b382b3/" target="_blank"><i class="fab fa-linkedin"></i></a> </div>
-      <div class="service-item"> <a href="https://x.com/home" target="_blank"><i class="fab fa-x-twitter"></i></a></div>
-      <div class="service-item"> <a href="https://github.com/N-Maurice" target="_blank"><i class="fab fa-github"></i></a></div>
-      <div class="service-item"> <a href="https://www.instagram.com/_tyler210/" target="_blank"><i class="fab fa-instagram"></i></a></div>
-      <div class="service-item"> <i class="fas fa-headset"></i></div>
+  <!-- Contact -->
+  <section id="contact" class="services">
+    <h2 class="section-footer">Let’s Connect</h2><br><br>
+    <div class="footer-flex">
+      <div class="contact-summary">
+        <h3>Contact Details</h3>
+        <p><strong>Email:</strong> m.nshimyumu@alustudent.com</p>
+        <p><strong>Phone:</strong> +250 791 430 371 / +250 727 484 499</p>
+        <p><strong>Location:</strong> Kigali, Rwanda</p>
+        <p><strong>Languages:</strong> Kinyarwanda (Native), English (Advanced), French (Intermediate)</p>
+      </div>
     </div>
+    <br/>
   </section>
 
- 
   <script src="js/script.js"></script>
 </body>
 </html>
